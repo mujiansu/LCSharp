@@ -1,0 +1,8 @@
+Entity Framework 6:
+this.context.Database.CommandTimeout = 180;
+
+Entity Framework 5:
+((IObjectContextAdapter)this.context).ObjectContext.CommandTimeout = 180;
+
+Entity Framework 4 and below:
+this.context.CommandTimeout = 180;
